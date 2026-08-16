@@ -6,6 +6,8 @@ labels: bug
 assignees: ''
 ---
 
+> **Aviso:** Game Sync Hub es un proyecto personal creado como hobby mediante vibe coding con inteligencia artificial. No está desarrollado por un programador profesional y se proporciona tal cual, sin garantías. Úsalo bajo tu propia responsabilidad y conserva copias de seguridad de los datos importantes. Consulta el [Aviso y responsabilidad](https://github.com/IMC93Labs/GameSyncHub-Releases/blob/main/DISCLAIMER.md).
+
 ## Versión de Game Sync Hub
 
 Ejemplo: v1.0.0
