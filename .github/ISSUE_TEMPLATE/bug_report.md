@@ -1,10 +1,9 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
+name: Reportar un problema
+about: Informa de un error o comportamiento inesperado de Game Sync Hub
+title: "[BUG] "
+labels: bug
 assignees: ''
-
 ---
 
 ## Versión de Game Sync Hub
