@@ -37,6 +37,18 @@ Game Sync Hub is a Windows application designed to protect, synchronize and reco
 - Manual emergency recovery copies.
 - Built-in checker for future stable updates published through this repository.
 
+### Visual overview
+
+![Game Sync Hub overview](docs/media/01-overview.png)
+
+Game Sync Hub helps you add a game, identify it visually, protect its save folder and use a controller-friendly console mode.
+
+![Add game and save protection](docs/media/add-game-and-save.gif)
+
+- [Quick start visual guide](docs/media/quick-start-es.png)
+- [Recovery visual guide](docs/media/recovery-es.png)
+- [Full visual documentation](docs/guides/visual-documentation-es.md)
+
 ### Downloads and updates
 
 Official builds are published only in **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**.
@@ -91,6 +103,18 @@ Game Sync Hub es una aplicación para Windows diseñada para proteger, sincroniz
 - Estadísticas de tiempo jugado y sesiones.
 - Copias de recuperación manual para emergencias.
 - Comprobador integrado para futuras actualizaciones estables publicadas en este repositorio.
+
+### Vista visual
+
+![Vista general de Game Sync Hub](docs/media/01-overview.png)
+
+Game Sync Hub permite añadir un juego, identificarlo visualmente, proteger su carpeta de partidas y usar un Modo consola pensado para mando.
+
+![Añadir juego y proteger partidas](docs/media/add-game-and-save.gif)
+
+- [Guía visual rápida](docs/media/quick-start-es.png)
+- [Guía visual de recuperación](docs/media/recovery-es.png)
+- [Documentación visual completa](docs/guides/visual-documentation-es.md)
 
 ### Descargas y actualizaciones
 
