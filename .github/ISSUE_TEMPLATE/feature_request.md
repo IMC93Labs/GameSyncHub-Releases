@@ -1,10 +1,9 @@
 ---
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
+name: Solicitar una mejora
+about: Sugiere una nueva función o mejora para Game Sync Hub
+title: "[MEJORA] "
+labels: enhancement
 assignees: ''
-
 ---
 
 ## Descripción de la mejora
