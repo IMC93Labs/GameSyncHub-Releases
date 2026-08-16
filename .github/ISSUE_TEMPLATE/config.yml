@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Preguntas y sugerencias
+  - name: Questions and help / Preguntas y ayuda
     url: https://github.com/IMC93Labs/GameSyncHub-Releases/discussions
-    about: Usa Discussions para preguntas generales, ayuda y sugerencias que no sean un error concreto.
+    about: Use Discussions for general questions, setup help and conversation. / Usa Discussions para preguntas generales, ayuda de configuración y conversación.
+  - name: Security issue / Problema de seguridad
+    url: https://github.com/IMC93Labs/GameSyncHub-Releases/blob/main/SECURITY.md
+    about: Do not publish sensitive security details in a public Issue. / No publiques detalles sensibles de seguridad en un Issue público.

@@ -1,0 +1,51 @@
+name: Request an improvement / Solicitar una mejora
+description: Suggest a feature or improvement for Game Sync Hub / Sugiere una función o mejora para Game Sync Hub
+title: "[FEATURE] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are welcome. Please describe the goal rather than only the implementation idea.
+        Las sugerencias son bienvenidas. Describe el objetivo además de la idea de implementación.
+
+        **Personal hobby project / Proyecto personal:** Game Sync Hub is developed in free time through AI-assisted vibe coding. There is no guarantee that a suggestion can be implemented.
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Proposed improvement / Mejora propuesta
+      description: What would you like to add or change? / ¿Qué te gustaría añadir o cambiar?
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need / Problema o necesidad
+      description: What problem would this solve or what would it improve? / ¿Qué problema resolvería o qué mejoraría?
+    validations:
+      required: true
+
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: Desired behaviour / Funcionamiento deseado
+      description: Describe how you would expect it to work. / Describe cómo te gustaría que funcionara.
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context / Información adicional
+      description: Add examples or screenshots if useful and non-sensitive. / Añade ejemplos o capturas si resultan útiles y no contienen información sensible.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks / Comprobaciones
+      options:
+        - label: I searched existing Issues and Discussions for a similar suggestion. / He buscado si ya existe una sugerencia similar en Issues o Discussions.
+          required: true
+        - label: I have not included passwords, tokens, credentials or personal information. / No he incluido contraseñas, tokens, credenciales ni información personal.
+          required: true

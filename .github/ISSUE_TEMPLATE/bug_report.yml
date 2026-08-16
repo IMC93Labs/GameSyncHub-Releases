@@ -1,0 +1,92 @@
+name: Report a bug / Reportar un problema
+description: Report unexpected behaviour in Game Sync Hub / Informa de un error o comportamiento inesperado
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem.
+        Gracias por dedicar tiempo a informar de un problema.
+
+        **Personal hobby project / Proyecto personal:** Game Sync Hub is developed in free time through AI-assisted vibe coding. It is provided as-is, without guarantees. Do not include passwords, tokens, credentials, private save files or personal information.
+
+        Read / Lee: [Disclaimer / Aviso y responsabilidad](https://github.com/IMC93Labs/GameSyncHub-Releases/blob/main/DISCLAIMER.md)
+
+  - type: input
+    id: version
+    attributes:
+      label: Game Sync Hub version / Versión de Game Sync Hub
+      placeholder: "e.g. / ej. v1.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version / Versión de Windows
+      placeholder: "e.g. / ej. Windows 11 24H2"
+    validations:
+      required: true
+
+  - type: input
+    id: game
+    attributes:
+      label: Affected game / Juego afectado
+      description: Leave blank if the issue is not related to a specific game. / Déjalo vacío si el problema no afecta a un juego concreto.
+      placeholder: "e.g. / ej. Red Dead Redemption 2"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / ¿Qué ha ocurrido?
+      description: Describe the problem clearly. / Describe el problema de forma clara.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / Pasos para reproducirlo
+      description: Explain the smallest sequence that reproduces the issue. / Explica la secuencia mínima que reproduce el problema.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour / Comportamiento esperado
+      description: What should have happened? / ¿Qué debería haber ocurrido?
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Reproducibility / Frecuencia
+      options:
+        - Always / Siempre
+        - Sometimes / A veces
+        - Happened once / Ha ocurrido una vez
+        - Not sure / No estoy seguro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information / Información adicional
+      description: Add screenshots, video or logs only if they contain no sensitive information. / Añade capturas, vídeo o registros solo si no contienen información sensible.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks / Comprobaciones
+      options:
+        - label: I searched existing Issues for the same problem. / He buscado si ya existe un Issue sobre el mismo problema.
+          required: true
+        - label: I have not included passwords, tokens, credentials, private save files or personal information. / No he incluido contraseñas, tokens, credenciales, partidas privadas ni información personal.
+          required: true
