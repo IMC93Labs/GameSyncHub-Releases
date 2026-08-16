@@ -41,12 +41,12 @@ It combines the normal desktop library with save protection, multi-PC recovery, 
 
 Game Sync Hub can identify a real game, retrieve its available artwork/metadata, protect its save folder and present the result in both the desktop library and Console Mode.
 
-![Add game and save protection](docs/media/add-game-and-save.gif)
+![Add Red Dead Redemption 2 and protect saves](docs/media/add-rdr2-full-flow.gif)`r`n`r`n![Console Mode with several real games](docs/media/console-multi-game.gif)
 
 - [Complete feature guide](docs/guides/features.md)
-- [Visual documentation](docs/guides/visual-documentation-es.md)
-- [Quick-start visual guide](docs/media/quick-start-es.png)
-- [Recovery visual guide](docs/media/recovery-es.png)
+- [Visual documentation](docs/guides/visual-documentation.md)
+- [Quick-start visual guide](docs/media/quick-start-en.png)
+- [Recovery visual guide](docs/media/recovery-en.png)
 
 ### Downloads and updates
 
@@ -119,10 +119,10 @@ Combina la biblioteca de escritorio con protección de saves, recuperación mult
 
 Game Sync Hub puede identificar un juego real, obtener su arte/metadatos disponibles, proteger su carpeta de partidas y mostrar el resultado tanto en la biblioteca de escritorio como en Modo consola.
 
-![Añadir juego y proteger partidas](docs/media/add-game-and-save.gif)
+![Añadir Red Dead Redemption 2 y proteger partidas](docs/media/add-rdr2-full-flow.gif)`r`n`r`n![Modo consola con varios juegos reales](docs/media/console-multi-game.gif)
 
 - [Guía completa de funciones](docs/guides/features.md#español)
-- [Documentación visual](docs/guides/visual-documentation-es.md)
+- [Documentación visual](docs/guides/visual-documentation.md)
 - [Guía visual rápida](docs/media/quick-start-es.png)
 - [Guía visual de recuperación](docs/media/recovery-es.png)
 
@@ -164,3 +164,4 @@ Consulta también: **[Soporte](SUPPORT.md)** · **[Seguridad](SECURITY.md)** · 
 ---
 
 **Game Sync Hub — IMC93Labs**
+
