@@ -16,19 +16,19 @@ Game Sync Hub es una aplicación para Windows diseñada para proteger, sincroniz
 
 ## Descargar Game Sync Hub
 
-La última versión disponible se publicará en la sección **Releases** de este repositorio.
+La última versión disponible se publicará en la sección **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)** de este repositorio.
 
 > Game Sync Hub se distribuye actualmente como un único archivo ejecutable para Windows.
 
 ## Actualizaciones
 
-Game Sync Hub incorporará un sistema de actualización que comprobará si existe una nueva versión publicada y permitirá descargarla desde la propia aplicación.
+Está previsto que Game Sync Hub compruebe automáticamente si existe una nueva versión publicada y permita descargarla desde la propia aplicación.
 
 ## Problemas y errores
 
-Si encuentras un problema, puedes informarlo en la sección **Issues**.
+Si encuentras un problema, utiliza **[Issues](https://github.com/IMC93Labs/GameSyncHub-Releases/issues/new/choose)** y selecciona **Reportar un problema**.
 
-Incluye, si es posible:
+La plantilla solicitará, entre otros datos:
 
 - versión de Game Sync Hub;
 - versión de Windows;
@@ -36,9 +36,13 @@ Incluye, si es posible:
 - descripción del problema;
 - pasos para reproducirlo.
 
+No publiques contraseñas, tokens, credenciales, partidas personales ni información privada.
+
 ## Preguntas y sugerencias
 
-Para preguntas generales, sugerencias o ideas de mejora puedes utilizar **Discussions**.
+Para preguntas generales, ayuda, sugerencias o ideas de mejora puedes utilizar **[Discussions](https://github.com/IMC93Labs/GameSyncHub-Releases/discussions)**.
+
+Si quieres proponer una mejora concreta también puedes utilizar la plantilla **Solicitar una mejora** de Issues.
 
 ## Código fuente
 
