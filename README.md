@@ -2,6 +2,18 @@
 
 Game Sync Hub es una aplicación para Windows diseñada para proteger, sincronizar y recuperar partidas guardadas de juegos de PC.
 
+## Aviso importante
+
+Game Sync Hub es un proyecto personal creado como hobby y desarrollado en mi tiempo libre. **No soy desarrollador de software profesional.**
+
+El desarrollo se realiza mediante **vibe coding con inteligencia artificial**, utilizando herramientas de IA para generar, modificar, revisar y probar el código y la documentación del proyecto.
+
+La aplicación se diseña y prueba con la intención de que sea segura y fiable, pero tanto el software como el código generado con ayuda de IA pueden contener errores o comportamientos no previstos. Por este motivo, **Game Sync Hub se proporciona tal cual, sin garantías**, y cada usuario decide utilizarlo bajo su propia responsabilidad.
+
+Antes de utilizar cualquier función relacionada con partidas guardadas, sincronización o recuperación, se recomienda conservar copias de seguridad independientes de los datos importantes.
+
+Consulta el **[Aviso y responsabilidad](DISCLAIMER.md)** para más información.
+
 ## Funciones principales
 
 - Protección automática de partidas guardadas.
