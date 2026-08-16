@@ -35,12 +35,13 @@ Game Sync Hub is a Windows application designed to protect, synchronize and reco
 - Console-style mode designed for controller use.
 - Game play-time and session statistics.
 - Manual emergency recovery copies.
+- Built-in checker for future stable updates published through this repository.
 
 ### Downloads and updates
 
 Official builds are published only in **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**.
 
-Game Sync Hub is distributed as a Windows executable. The application is planned to check this repository for newer official releases and offer in-app updates.
+Game Sync Hub is distributed as a portable Windows executable. The application includes a built-in updater that checks this repository for newer stable official releases and asks for confirmation before installing them.
 
 > Do not download Game Sync Hub from unofficial mirrors unless a release note explicitly points to them.
 
@@ -89,12 +90,13 @@ Game Sync Hub es una aplicación para Windows diseñada para proteger, sincroniz
 - Modo consola diseñado para uso con mando.
 - Estadísticas de tiempo jugado y sesiones.
 - Copias de recuperación manual para emergencias.
+- Comprobador integrado para futuras actualizaciones estables publicadas en este repositorio.
 
 ### Descargas y actualizaciones
 
 Las compilaciones oficiales se publican únicamente en **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**.
 
-Game Sync Hub se distribuye como ejecutable para Windows. Está previsto que la aplicación consulte este repositorio para detectar versiones oficiales más recientes y ofrecer su actualización desde el propio programa.
+Game Sync Hub se distribuye como un ejecutable portable para Windows. La aplicación incluye un actualizador integrado que consulta este repositorio para detectar versiones oficiales estables más recientes y solicita confirmación antes de instalarlas.
 
 > No descargues Game Sync Hub desde mirrors o páginas no oficiales salvo que una Release indique expresamente lo contrario.
 
