@@ -7,14 +7,6 @@ assignees: ''
 
 ---
 
----
-name: Reportar un problema
-about: Informa de un error o comportamiento inesperado de Game Sync Hub
-title: "[BUG] "
-labels: bug
-assignees: ''
----
-
 ## Versión de Game Sync Hub
 
 Ejemplo: v1.0.0

@@ -7,14 +7,6 @@ assignees: ''
 
 ---
 
----
-name: Solicitar una mejora
-about: Sugiere una nueva función o mejora para Game Sync Hub
-title: "[MEJORA] "
-labels: enhancement
-assignees: ''
----
-
 ## Descripción de la mejora
 
 Explica qué te gustaría añadir o cambiar.
