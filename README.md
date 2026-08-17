@@ -35,7 +35,7 @@ It combines the normal desktop library with local-first save protection, multi-P
 - **Transfer Center** for real synchronization activity, including pending, verifying, uploading and recovery work.
 - **Optional Anti-UAC rules** for trusted games/launchers without globally disabling Windows UAC.
 - **Optional MSI Afterburner + RTSS controller shortcut**: Menu/Start + View/Select can reuse the configured Toggle On-Screen Display hotkey during a game.
-- **Built-in updater** for stable GitHub Releases, with SHA-256 verification, safe-state checks, startup handshake and rollback protection.
+- **Built-in updater** for stable GitHub Releases, with SHA-256 verification, safe-state checks, startup handshake, rollback protection and automatic repair of the managed Windows-startup entry when enabled.
 - **Portable single-file distribution**: the public Windows build is delivered as one self-contained `GameSyncHub.exe`.
 
 ➡️ **[See the complete feature guide](docs/guides/features.md)**
@@ -59,7 +59,7 @@ Game Sync Hub can identify a real game, retrieve its available artwork/metadata,
 
 Official builds are published only in **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**. The current stable build is always available from **[Latest release](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)**.
 
-Game Sync Hub is distributed as a portable Windows executable. The built-in updater checks this repository for newer stable official releases and asks for confirmation before installing them. The downloaded executable is verified against the release manifest before replacement, and rollback protection is available if the new build cannot complete its startup confirmation.
+Game Sync Hub is distributed as a portable Windows executable. The built-in updater checks this repository for newer stable official releases and asks for confirmation before installing them. The downloaded executable is verified against the release manifest before replacement, and rollback protection is available if the new build cannot complete its startup confirmation. If **Start with Windows** is enabled, the new version validates and repairs its own startup registration so it continues to point to the current executable path and filename after an update.
 
 > Do not download Game Sync Hub from unofficial mirrors unless a release note explicitly points to them.
 
@@ -124,7 +124,7 @@ Combina la biblioteca de escritorio con protección local-first de saves, recupe
 - **Centro de transferencias** para mostrar la actividad real de sincronización, incluyendo pendientes, verificación, subida y recuperación.
 - **Reglas Anti-UAC opcionales** para juegos/launchers de confianza sin desactivar globalmente el UAC de Windows.
 - **Atajo opcional para MSI Afterburner + RTSS**: Menu/Start + View/Select puede reutilizar la tecla Toggle On-Screen Display configurada para abrir/cerrar el overlay durante un juego.
-- **Actualizador integrado** para Releases estables de GitHub, con validación SHA-256, comprobación de estado seguro, confirmación de arranque y rollback.
+- **Actualizador integrado** para Releases estables de GitHub, con validación SHA-256, comprobación de estado seguro, confirmación de arranque, rollback y reparación automática del inicio con Windows gestionado cuando está activado.
 - **Distribución portable en un solo archivo**: la versión pública de Windows se entrega como un `GameSyncHub.exe` self-contained.
 
 ➡️ **[Ver la guía completa de funciones](docs/guides/features.md#español)**
@@ -148,7 +148,7 @@ Game Sync Hub puede identificar un juego real, obtener su arte/metadatos disponi
 
 Las compilaciones oficiales se publican únicamente en **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**. La compilación estable actual siempre está disponible en **[Latest release](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)**.
 
-Game Sync Hub se distribuye como un ejecutable portable para Windows. El actualizador integrado consulta este repositorio para detectar versiones oficiales estables más recientes y solicita confirmación antes de instalarlas. El ejecutable descargado se valida frente al manifiesto de la Release antes de sustituir el actual y existe protección de rollback si la nueva versión no completa correctamente su confirmación de arranque.
+Game Sync Hub se distribuye como un ejecutable portable para Windows. El actualizador integrado consulta este repositorio para detectar versiones oficiales estables más recientes y solicita confirmación antes de instalarlas. El ejecutable descargado se valida frente al manifiesto de la Release antes de sustituir el actual y existe protección de rollback si la nueva versión no completa correctamente su confirmación de arranque. Si **Iniciar con Windows** está activado, la nueva versión valida y repara su propia entrada de inicio para que siga apuntando a la ruta y nombre actuales del ejecutable después de una actualización.
 
 > No descargues Game Sync Hub desde mirrors o páginas no oficiales salvo que una Release indique expresamente lo contrario.
 
