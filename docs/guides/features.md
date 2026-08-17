@@ -122,6 +122,7 @@ Game Sync Hub includes a built-in updater for stable releases published in this 
 - Replace the running executable only when Game Sync Hub is in a genuinely critical state that must not be interrupted.
 - A failed, deferred or offline cloud operation that is not actively modifying save data does not need to block updates indefinitely.
 - Use a temporary updater helper, startup handshake and rollback protection if the new executable cannot start correctly.
+- If **Start with Windows** is enabled, the application validates and silently repairs its managed startup entry after an update so it points to the current executable path and filename, including renamed portable executables.
 - Updating the application does not intentionally replace saves, Google Drive library data, SaveCache, junction configuration or local settings.
 
 ### Portable distribution
@@ -254,6 +255,7 @@ Game Sync Hub incluye un actualizador integrado para las versiones estables publ
 - Sustituir el ejecutable únicamente cuando exista una operación realmente crítica que no deba interrumpirse.
 - Una operación de nube fallida, diferida u offline que no esté modificando activamente las partidas no tiene por qué bloquear indefinidamente una actualización.
 - Utilizar helper temporal, confirmación de arranque y rollback si el nuevo ejecutable no puede arrancar correctamente.
+- Si **Iniciar con Windows** está activado, la aplicación valida y repara silenciosamente su propia entrada de inicio después de una actualización para que apunte a la ruta y nombre actuales del ejecutable, incluidos ejecutables portables renombrados.
 - La actualización de la aplicación no está diseñada para sustituir partidas, datos de biblioteca en Drive, SaveCache, configuración de junctions ni ajustes locales.
 
 ### Distribución portable
