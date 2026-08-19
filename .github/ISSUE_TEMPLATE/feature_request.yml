@@ -11,6 +11,7 @@ body:
         Las sugerencias son bienvenidas. Describe el objetivo además de la idea de implementación.
 
         **Personal hobby project / Proyecto personal:** Game Sync Hub is developed in free time through AI-assisted vibe coding. There is no guarantee that a suggestion can be implemented.
+        Game Sync Hub se desarrolla en el tiempo libre mediante vibe coding asistido por IA. No existe garantía de que una sugerencia pueda implementarse.
 
   - type: textarea
     id: improvement
