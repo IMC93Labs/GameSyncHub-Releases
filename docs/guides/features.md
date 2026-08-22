@@ -93,14 +93,15 @@ Game Sync Hub includes an abstraction layer for different controller families:
 - **Nintendo**
 - **Generic HID controllers**
 
-The application can adapt button glyphs, choose a preferred controller, filter unwanted stick movement with a dead zone and handle controller reconnection. Exact behaviour can vary with the device and Windows driver.
+The application can adapt button glyphs, choose a preferred controller, filter unwanted stick movement with a dead zone and handle controller reconnection. Xbox/XInput presence detection also filters transient or disconnected Bluetooth states before treating a controller as physically available, reducing false automatic Console Mode entry. Exact behaviour can vary with the device and Windows driver.
 
 ### Optional performance-overlay shortcut
 
 For users who already use **MSI Afterburner + RivaTuner Statistics Server (RTSS)**, Game Sync Hub can expose a controller shortcut for the existing performance overlay.
 
 - During a game, the shortcut uses **Menu/Start + View/Select**.
-- Game Sync Hub reuses the **Toggle On-Screen Display** hotkey configured in MSI Afterburner when available.
+- When the direct RTSS interface is available, Game Sync Hub toggles the RTSS On-Screen Display directly through its visibility flags, so the controller shortcut does not depend on the keyboard hotkey configured in MSI Afterburner.
+- The existing hotkey-based path is retained only as a compatibility fallback if the required direct RTSS exports are unavailable.
 - Game Sync Hub does **not** install Afterburner or RTSS and does not create the overlay itself.
 
 ### Optional Anti-UAC launch rules
@@ -226,14 +227,15 @@ Game Sync Hub incluye una capa de abstracción para distintas familias de mando:
 - **Nintendo**
 - **Mandos HID genéricos**
 
-La aplicación puede adaptar los iconos de botones, elegir mando preferido, filtrar movimientos involuntarios mediante zona muerta y gestionar reconexiones. El comportamiento exacto puede variar según el dispositivo y el controlador de Windows.
+La aplicación puede adaptar los iconos de botones, elegir mando preferido, filtrar movimientos involuntarios mediante zona muerta y gestionar reconexiones. La detección de presencia Xbox/XInput también filtra estados Bluetooth transitorios o desconectados antes de considerar que existe un mando físico disponible, reduciendo entradas automáticas falsas en Modo consola. El comportamiento exacto puede variar según el dispositivo y el controlador de Windows.
 
 ### Atajo opcional para overlay de rendimiento
 
 Para quien ya utilice **MSI Afterburner + RivaTuner Statistics Server (RTSS)**, Game Sync Hub puede ofrecer un atajo de mando para controlar el overlay de rendimiento existente.
 
 - Durante un juego, el atajo utiliza **Menu/Start + View/Select**.
-- Game Sync Hub reutiliza la tecla **Toggle On-Screen Display** configurada en MSI Afterburner cuando está disponible.
+- Cuando la interfaz directa de RTSS está disponible, Game Sync Hub muestra u oculta directamente el OSD mediante sus flags de visibilidad, por lo que el atajo del mando no depende de la tecla configurada en MSI Afterburner.
+- La ruta basada en hotkey se conserva únicamente como fallback de compatibilidad si las exports directas necesarias de RTSS no están disponibles.
 - Game Sync Hub **no instala** Afterburner ni RTSS y no genera por sí mismo el overlay.
 
 ### Reglas Anti-UAC opcionales
@@ -254,7 +256,7 @@ Game Sync Hub incluye un actualizador integrado para las versiones estables publ
 - Descargar el asset oficial `GameSyncHub.exe` y verificar su SHA-256 frente al manifiesto de la Release.
 - Sustituir el ejecutable únicamente cuando exista una operación realmente crítica que no deba interrumpirse.
 - Una operación de nube fallida, diferida u offline que no esté modificando activamente las partidas no tiene por qué bloquear indefinidamente una actualización.
-- Utilizar helper temporal, confirmación de arranque y rollback si el nuevo ejecutable no puede arrancar correctamente.
+- Utilizar helper temporal, confirmación de arranque y rollback si la nueva versión no puede arrancar correctamente.
 - Si **Iniciar con Windows** está activado, la aplicación valida y repara silenciosamente su propia entrada de inicio después de una actualización para que apunte a la ruta y nombre actuales del ejecutable, incluidos ejecutables portables renombrados.
 - La actualización de la aplicación no está diseñada para sustituir partidas, datos de biblioteca en Drive, SaveCache, configuración de junctions ni ajustes locales.
 
