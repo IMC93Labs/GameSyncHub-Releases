@@ -61,7 +61,7 @@ Console Mode is designed around logical actions, with controller glyphs adapted 
 
 ![Performance overlay settings](../media/11-performance-overlay.png)
 
-Game Sync Hub does not install MSI Afterburner or RivaTuner Statistics Server. It only reuses a configured On-Screen Display hotkey when available.
+Game Sync Hub does not install MSI Afterburner or RivaTuner Statistics Server. With MSI Afterburner + RTSS already configured, Menu/Start + View/Select toggles the RTSS On-Screen Display directly when the RTSS interface is available, independently of the keyboard hotkey configured in Afterburner. The hotkey path remains only as a compatibility fallback.
 
 ### 8. Anti-UAC launcher support
 
@@ -140,7 +140,7 @@ El Modo consola usa acciones lógicas y adapta los glyphs al perfil de mando sel
 
 ![Ajustes de overlay de rendimiento](../media/11-performance-overlay.png)
 
-Game Sync Hub no instala MSI Afterburner ni RivaTuner Statistics Server. Solo reutiliza una tecla configurada para el OSD cuando existe.
+Game Sync Hub no instala MSI Afterburner ni RivaTuner Statistics Server. Con MSI Afterburner + RTSS ya configurados, Menu/Start + View/Select muestra u oculta directamente el OSD de RTSS cuando su interfaz está disponible, independientemente de la tecla configurada en Afterburner. La ruta basada en hotkey queda únicamente como fallback de compatibilidad.
 
 ### 8. Anti-UAC
 
