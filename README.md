@@ -29,12 +29,12 @@ It combines the normal desktop library with local-first save protection, multi-P
 - **New-PC/reinstall recovery**: recover the library from Drive and re-link a game to its new executable/save location.
 - **Game metadata scraper**: search public candidates and apply available cover art, horizontal backgrounds, icons and descriptions.
 - **Console Mode** with dynamic game artwork, themes, configurable background effects, favourites/recent games and controller-first navigation.
-- **Controller support** for Xbox/XInput, PlayStation, Nintendo and generic HID devices, with adaptive button glyphs and reconnection handling.
+- **Controller support** for Xbox/XInput, PlayStation, Nintendo and generic HID devices, with adaptive button glyphs, reconnection handling and filtering of transient Xbox/Bluetooth presence states.
 - **Automatic Console Mode entry** when a controller is connected, if enabled, or direct Console Mode startup.
 - **Play statistics** including play time, sessions and last-played information.
 - **Transfer Center** for real synchronization activity, including pending, verifying, uploading and recovery work.
 - **Optional Anti-UAC rules** for trusted games/launchers without globally disabling Windows UAC.
-- **Optional MSI Afterburner + RTSS controller shortcut**: Menu/Start + View/Select can reuse the configured Toggle On-Screen Display hotkey during a game.
+- **Optional MSI Afterburner + RTSS controller shortcut**: Menu/Start + View/Select toggles the existing RTSS On-Screen Display directly, independent of the keyboard hotkey configured in Afterburner when the direct RTSS API is available.
 - **Built-in updater** for stable GitHub Releases, with SHA-256 verification, safe-state checks, startup handshake, rollback protection and automatic repair of the managed Windows-startup entry when enabled.
 - **Portable single-file distribution**: the public Windows build is delivered as one self-contained `GameSyncHub.exe`.
 
@@ -118,12 +118,12 @@ Combina la biblioteca de escritorio con protección local-first de saves, recupe
 - **Recuperación tras reinstalar/cambiar de PC**: recuperar la biblioteca desde Drive y volver a vincular cada juego con su nuevo ejecutable/ruta de saves.
 - **Scraper de metadatos e imágenes**: busca candidatos públicos y aplica portada, fondo horizontal, icono y descripción cuando están disponibles.
 - **Modo consola** con arte dinámico por juego, temas, efectos de fondo configurables, favoritos/recientes y navegación orientada a mando.
-- **Soporte de mandos** Xbox/XInput, PlayStation, Nintendo y HID genéricos, con iconos adaptados y gestión de reconexión.
+- **Soporte de mandos** Xbox/XInput, PlayStation, Nintendo y HID genéricos, con iconos adaptados, gestión de reconexión y filtrado de estados Xbox/Bluetooth transitorios.
 - **Entrada automática en Modo consola** al conectar un mando, si se activa, o inicio directo en Modo consola.
 - **Estadísticas de juego** con tiempo jugado, sesiones y última vez jugado.
 - **Centro de transferencias** para mostrar la actividad real de sincronización, incluyendo pendientes, verificación, subida y recuperación.
 - **Reglas Anti-UAC opcionales** para juegos/launchers de confianza sin desactivar globalmente el UAC de Windows.
-- **Atajo opcional para MSI Afterburner + RTSS**: Menu/Start + View/Select puede reutilizar la tecla Toggle On-Screen Display configurada para abrir/cerrar el overlay durante un juego.
+- **Atajo opcional para MSI Afterburner + RTSS**: Menu/Start + View/Select muestra u oculta directamente el OSD de RTSS, independientemente de la tecla configurada en Afterburner cuando la API directa de RTSS está disponible.
 - **Actualizador integrado** para Releases estables de GitHub, con validación SHA-256, comprobación de estado seguro, confirmación de arranque, rollback y reparación automática del inicio con Windows gestionado cuando está activado.
 - **Distribución portable en un solo archivo**: la versión pública de Windows se entrega como un `GameSyncHub.exe` self-contained.
 
