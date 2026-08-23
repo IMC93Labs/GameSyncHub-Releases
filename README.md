@@ -5,7 +5,7 @@ Versiones oficiales, actualizaciones y soporte para **Game Sync Hub**.
 
 [English](#english) · [Español](#espanol)
 
-**Latest stable release / Última versión estable:** [v1.0.11](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/tag/v1.0.11) · [All releases / Todas las versiones](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)
+**Latest stable release / Última versión estable:** [v1.0.12](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/tag/v1.0.12) · [All releases / Todas las versiones](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)
 
 ---
 
@@ -18,11 +18,12 @@ Game Sync Hub is a portable Windows application designed to organize local PC ga
 
 It combines the normal desktop library with local-first save protection, multi-PC recovery, automatic artwork/metadata enrichment, controller support and optional integrations such as Anti-UAC launch rules and an MSI Afterburner/RTSS performance-overlay shortcut.
 
-### Latest release — v1.0.11
+### Latest release — v1.0.12
 
-- **Polished Console Mode startup:** automatic controller entry now uses a cinematic startup transition while Console Mode prepares behind it, then hands off only when the console interface is ready.
-- **Continuous Console Mode ambience:** the configured ambient audio can begin with the startup transition and continue into Console Mode without restarting at the handoff.
-- **Self-contained playback:** the public Windows build keeps the intro media runtime bundled with Game Sync Hub, preserving the portable single-EXE distribution without requiring an external media-player application.
+- **Xbox/XInput startup haptics:** entering Console Mode can now trigger a short two-pulse controller vibration pattern, synchronized with the startup experience and safely cancelled on disconnect.
+- **Automatic startup update check:** Game Sync Hub now performs one non-blocking stable-channel update check per app run, reusing the existing verified updater and remaining silent when already current or temporarily offline.
+- **Cleaner Console Mode exit:** controller-driven exit now uses a brief black `Exiting...` transition while the normal interface is restored behind it, reducing visible intermediate states during the handoff.
+- **Console startup experience retained:** the cinematic startup transition, continuous ambience and self-contained media playback introduced in v1.0.11 remain part of the portable single-EXE build.
 
 ### Highlights
 
@@ -65,7 +66,7 @@ Game Sync Hub can identify a real game, retrieve its available artwork/metadata,
 
 Official builds are published only in **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**. The current stable build is always available from **[Latest release](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)**.
 
-Game Sync Hub is distributed as a portable Windows executable. The built-in updater checks this repository for newer stable official releases and asks for confirmation before installing them. The downloaded executable is verified against the release manifest before replacement, and rollback protection is available if the new build cannot complete its startup confirmation. If **Start with Windows** is enabled, the new version validates and repairs its own startup registration so it continues to point to the current executable path and filename after an update.
+Game Sync Hub is distributed as a portable Windows executable. On startup it performs one background check for a newer stable official release without blocking the interface. If an update is available, the existing updater asks for confirmation before installing it; if the app is already current or the check cannot complete because the network is unavailable, no unnecessary interruption is shown. The downloaded executable is verified against the release manifest before replacement, and rollback protection is available if the new build cannot complete its startup confirmation. If **Start with Windows** is enabled, the new version validates and repairs its own startup registration so it continues to point to the current executable path and filename after an update.
 
 > Do not download Game Sync Hub from unofficial mirrors unless a release note explicitly points to them.
 
@@ -113,11 +114,12 @@ Game Sync Hub es una aplicación portable para Windows diseñada para organizar 
 
 Combina la biblioteca de escritorio con protección local-first de saves, recuperación multi-PC, enriquecimiento automático de arte/metadatos, soporte de mandos e integraciones opcionales como reglas Anti-UAC y el atajo de overlay de rendimiento de MSI Afterburner/RTSS.
 
-### Última versión — v1.0.11
+### Última versión — v1.0.12
 
-- **Arranque de Modo consola pulido:** la entrada automática al conectar el mando utiliza ahora una transición de inicio cinematográfica mientras el Modo consola se prepara detrás y solo realiza el handoff cuando la interfaz está lista.
-- **Ambiente continuo del Modo consola:** el audio ambiente configurado puede comenzar junto con la transición y continuar dentro del Modo consola sin reiniciarse durante el cambio.
-- **Reproducción autocontenida:** la versión pública de Windows mantiene el runtime multimedia de la intro incluido con Game Sync Hub, conservando la distribución portable en un único EXE sin requerir una aplicación reproductora externa.
+- **Vibración de arranque para Xbox/XInput:** al entrar en Modo consola puede reproducirse ahora un patrón corto de dos pulsos en el mando, sincronizado con la experiencia de inicio y con cancelación segura si el mando se desconecta.
+- **Comprobación automática de actualizaciones al arrancar:** Game Sync Hub realiza una única comprobación no bloqueante del canal estable por ejecución, reutilizando el actualizador verificado existente y permaneciendo silencioso si ya está actualizado o no hay conexión temporalmente.
+- **Salida del Modo consola más limpia:** la salida mediante mando utiliza ahora una transición negra breve `Saliendo...` mientras la interfaz normal se restaura detrás, reduciendo estados intermedios visibles durante el cambio.
+- **Se conserva la experiencia de arranque de consola:** la transición cinematográfica, el audio ambiente continuo y la reproducción multimedia autocontenida introducidos en v1.0.11 continúan formando parte del EXE portable único.
 
 ### Funciones destacadas
 
@@ -160,7 +162,7 @@ Game Sync Hub puede identificar un juego real, obtener su arte/metadatos disponi
 
 Las compilaciones oficiales se publican únicamente en **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**. La compilación estable actual siempre está disponible en **[Latest release](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)**.
 
-Game Sync Hub se distribuye como un ejecutable portable para Windows. El actualizador integrado consulta este repositorio para detectar versiones oficiales estables más recientes y solicita confirmación antes de instalarlas. El ejecutable descargado se valida frente al manifiesto de la Release antes de sustituir el actual y existe protección de rollback si la nueva versión no completa correctamente su confirmación de arranque. Si **Iniciar con Windows** está activado, la nueva versión valida y repara su propia entrada de inicio para que siga apuntando a la ruta y nombre actuales del ejecutable después de una actualización.
+Game Sync Hub se distribuye como un ejecutable portable para Windows. Al arrancar realiza una única comprobación en segundo plano para detectar una versión estable oficial más reciente sin bloquear la interfaz. Si existe una actualización, el actualizador actual solicita confirmación antes de instalarla; si la aplicación ya está al día o la comprobación no puede completarse por falta temporal de red, no se muestra ninguna interrupción innecesaria. El ejecutable descargado se valida frente al manifiesto de la Release antes de sustituir el actual y existe protección de rollback si la nueva versión no completa correctamente su confirmación de arranque. Si **Iniciar con Windows** está activado, la nueva versión valida y repara silenciosamente su propia entrada de inicio para que siga apuntando a la ruta y nombre actuales del ejecutable después de una actualización.
 
 > No descargues Game Sync Hub desde mirrors o páginas no oficiales salvo que una Release indique expresamente lo contrario.
 
