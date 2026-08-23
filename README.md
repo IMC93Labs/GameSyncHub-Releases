@@ -5,7 +5,7 @@ Versiones oficiales, actualizaciones y soporte para **Game Sync Hub**.
 
 [English](#english) · [Español](#espanol)
 
-**Latest stable release / Última versión estable:** [GitHub Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)
+**Latest stable release / Última versión estable:** [v1.0.11](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/tag/v1.0.11) · [All releases / Todas las versiones](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)
 
 ---
 
@@ -17,6 +17,12 @@ Versiones oficiales, actualizaciones y soporte para **Game Sync Hub**.
 Game Sync Hub is a portable Windows application designed to organize local PC games, protect and recover their save data, synchronize selected information through Google Drive, and provide a controller-friendly console experience for TV/couch use.
 
 It combines the normal desktop library with local-first save protection, multi-PC recovery, automatic artwork/metadata enrichment, controller support and optional integrations such as Anti-UAC launch rules and an MSI Afterburner/RTSS performance-overlay shortcut.
+
+### Latest release — v1.0.11
+
+- **Polished Console Mode startup:** automatic controller entry now uses a cinematic startup transition while Console Mode prepares behind it, then hands off only when the console interface is ready.
+- **Continuous Console Mode ambience:** the configured ambient audio can begin with the startup transition and continue into Console Mode without restarting at the handoff.
+- **Self-contained playback:** the public Windows build keeps the intro media runtime bundled with Game Sync Hub, preserving the portable single-EXE distribution without requiring an external media-player application.
 
 ### Highlights
 
@@ -106,6 +112,12 @@ See also: **[Support](SUPPORT.md)** · **[Security](SECURITY.md)** · **[Contrib
 Game Sync Hub es una aplicación portable para Windows diseñada para organizar juegos locales de PC, proteger y recuperar sus partidas guardadas, sincronizar mediante Google Drive la información necesaria y ofrecer una experiencia de consola manejable con mando desde el televisor o el sofá.
 
 Combina la biblioteca de escritorio con protección local-first de saves, recuperación multi-PC, enriquecimiento automático de arte/metadatos, soporte de mandos e integraciones opcionales como reglas Anti-UAC y el atajo de overlay de rendimiento de MSI Afterburner/RTSS.
+
+### Última versión — v1.0.11
+
+- **Arranque de Modo consola pulido:** la entrada automática al conectar el mando utiliza ahora una transición de inicio cinematográfica mientras el Modo consola se prepara detrás y solo realiza el handoff cuando la interfaz está lista.
+- **Ambiente continuo del Modo consola:** el audio ambiente configurado puede comenzar junto con la transición y continuar dentro del Modo consola sin reiniciarse durante el cambio.
+- **Reproducción autocontenida:** la versión pública de Windows mantiene el runtime multimedia de la intro incluido con Game Sync Hub, conservando la distribución portable en un único EXE sin requerir una aplicación reproductora externa.
 
 ### Funciones destacadas
 
