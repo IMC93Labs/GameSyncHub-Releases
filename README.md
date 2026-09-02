@@ -5,7 +5,7 @@ Versiones oficiales, actualizaciones y soporte para **Game Sync Hub**.
 
 [English](#english) · [Español](#espanol)
 
-**Latest stable release / Última versión estable:** [v1.0.13](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/tag/v1.0.13) · [All releases / Todas las versiones](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)
+**Latest stable release / Última versión estable:** [v1.0.15](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/tag/v1.0.15) · [All releases / Todas las versiones](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)
 
 ---
 
@@ -14,40 +14,39 @@ Versiones oficiales, actualizaciones y soporte para **Game Sync Hub**.
 
 ### What is Game Sync Hub?
 
-Game Sync Hub is a portable Windows application designed to organize local PC games, protect and recover their save data, synchronize selected information through Google Drive, and provide a controller-friendly console experience for TV/couch use.
+Game Sync Hub is a portable Windows application for organizing local PC games, protecting and recovering save data, synchronizing selected information through Google Drive, and providing a controller-friendly Console Mode for TV/couch use.
 
-It combines the normal desktop library with local-first save protection, multi-PC recovery, automatic artwork/metadata enrichment, controller support and optional integrations such as Anti-UAC launch rules and an MSI Afterburner/RTSS performance-overlay shortcut.
+It combines a desktop game library with local-first save protection, multi-PC recovery, automatic artwork/metadata enrichment, controller support, play statistics and optional integrations such as Anti-UAC launch rules and MSI Afterburner/RTSS performance-overlay control.
 
-### Latest release — v1.0.13
+### Latest release — v1.0.15
 
-- **Performance and visual polish:** startup, navigation and image loading do less redundant work and reduce provisional visual states so screens feel steadier and more immediate.
-- **Local-first known save paths:** create, edit and delete actions update the local UI immediately after durable local persistence, while Google Drive synchronization continues in the background.
-- **Cleaner Console Mode handoff:** refined window lifecycle removes intermediate legacy views, desktop flashes and first-restore glitches during repeated entry/exit cycles.
-- **Controller stability fix:** corrected native `JOYCAPS` marshalling in the WinMM path after stress testing identified it as the source of a heap-corruption crash.
-- **Cleaner runtime:** removed obsolete periodic legacy-profile checks and the repeated missing-`menu.wav` lookup while preserving existing behaviour.
-- **Localized update notes:** update information can follow the current Game Sync Hub UI language (English/Spanish), with English fallback and backward-compatible manifests.
+- **Save and cloud reliability hardening:** upload/download recovery now survives interrupted operations while preserving verified local and remote states.
+- **Durable recovery state:** journaled operations, monotonic terminal states, state reconciliation and compare-and-swap protection prevent stale background work from overwriting newer valid state.
+- **Safer multi-PC synchronization:** stronger Current / Previous integrity and conflict handling avoid overwriting independent progress.
+- **Recovered Google Drive performance:** remote inventory reuse and larger resumable-upload chunks restore practical synchronization times while keeping safety checks intact.
+- **Controller hotplug stability:** fixed a native HID/WinMM failure path that could terminate Game Sync Hub when Bluetooth controllers disconnected or reconnected.
+- **Console Mode polish:** refined library, settings, game editor, multimedia selection, motion, interface sounds, haptics and startup experience.
+- **General stability and lifecycle improvements** across long-running controller, cloud and UI workflows.
 
-➡️ **[See the v1.0.13 release summary](docs/releases/v1.0.13.md)**
+➡️ **[See the v1.0.15 release summary](docs/releases/v1.0.15.md)**
 
 ### Highlights
 
-- **Local-first save protection and recovery** with validated local protection, verified Current / Previous history and manual emergency recovery material.
-- **Google Drive synchronization** for protected saves plus the information required to recover the Game Sync Hub library on another PC.
-- **Offline-friendly operation**: if Internet or Drive is unavailable, a healthy local save remains usable and pending synchronization can resume when connectivity returns.
-- **Self-healing cloud synchronization** for managed Drive resources, with safeguards against stale resource references, repeated retry loops and duplicate logical recovery staging.
-- **Efficient manual recovery updates** that can reuse verified unchanged files instead of uploading the complete recovery tree again unnecessarily.
-- **Multi-PC safety** with divergence detection based on save history rather than blindly choosing the newest timestamp.
-- **New-PC/reinstall recovery**: recover the library from Drive and re-link a game to its new executable/save location.
-- **Game metadata scraper**: search public candidates and apply available cover art, horizontal backgrounds, icons and descriptions.
-- **Console Mode** with dynamic game artwork, themes, configurable background effects, favourites/recent games and controller-first navigation.
-- **Controller support** for Xbox/XInput, PlayStation, Nintendo and generic HID devices, with adaptive button glyphs, reconnection handling and filtering of transient Xbox/Bluetooth presence states.
-- **Automatic Console Mode entry** when a controller is connected, if enabled, or direct Console Mode startup.
+- **Local-first save protection and recovery** with verified Current / Previous history and manual emergency-recovery material.
+- **Google Drive synchronization** for protected saves and the information required to recover the Game Sync Hub library on another PC.
+- **Interruption-safe synchronization:** resumable uploads, isolated download staging, durable journals and recovery checks are designed to avoid promoting partial save data.
+- **Offline-friendly operation:** a healthy local save remains usable when Internet or Drive is temporarily unavailable, with pending work resumed later.
+- **Multi-PC safety** with divergence detection and conflict preservation instead of blindly choosing the newest timestamp.
+- **New-PC/reinstall recovery:** recover the library from Drive and re-link games to their new executable and save locations.
+- **Automatic metadata and artwork enrichment** for covers, horizontal backgrounds, icons and descriptions when available.
+- **Console Mode** with dynamic artwork, configurable background motion, favourites/recent games and controller-first navigation.
+- **Controller support** for Xbox/XInput, PlayStation, Nintendo and generic HID devices, including adaptive glyphs and reconnection handling.
 - **Play statistics** including play time, sessions and last-played information.
-- **Transfer Center** for real synchronization activity, including pending, verifying, uploading and recovery work.
-- **Optional Anti-UAC rules** for trusted games/launchers without globally disabling Windows UAC.
-- **Optional MSI Afterburner + RTSS controller shortcut**: Menu/Start + View/Select toggles the existing RTSS On-Screen Display directly, independent of the keyboard hotkey configured in Afterburner when the direct RTSS API is available.
-- **Built-in updater** for stable GitHub Releases, with SHA-256 verification, safe-state checks, startup handshake, rollback protection and automatic repair of the managed Windows-startup entry when enabled.
-- **Portable single-file distribution**: the public Windows build is delivered as one self-contained `GameSyncHub.exe`.
+- **Transfer Center** showing real synchronization work such as pending, verifying, uploading and recovery operations.
+- **Optional Anti-UAC rules** for trusted games and launchers without globally disabling Windows UAC.
+- **Optional MSI Afterburner + RTSS integration** for controller-based OSD toggling when the direct RTSS path is available.
+- **Built-in updater** using stable GitHub Releases, SHA-256 verification, safe-state checks, startup handshake and rollback protection.
+- **Portable single-file distribution:** the public Windows build is delivered as one self-contained `GameSyncHub.exe`.
 
 ➡️ **[See the complete feature guide](docs/guides/features.md)**
 
@@ -55,7 +54,7 @@ It combines the normal desktop library with local-first save protection, multi-P
 
 ![Game Sync Hub overview](docs/media/01-overview.png)
 
-Game Sync Hub can identify a real game, retrieve its available artwork/metadata, protect its save folder and present the result in both the desktop library and Console Mode.
+Game Sync Hub can identify a game, retrieve available artwork/metadata, protect its save folder and present it in both the desktop library and Console Mode.
 
 ![Add Red Dead Redemption 2 and protect saves](docs/media/add-rdr2-full-flow.gif)
 
@@ -70,25 +69,23 @@ Game Sync Hub can identify a real game, retrieve its available artwork/metadata,
 
 Official builds are published only in **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**. The current stable build is always available from **[Latest release](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)**.
 
-Game Sync Hub is distributed as a portable Windows executable. On startup it performs one background check for a newer stable official release without blocking the interface. If an update is available, the existing updater presents the prepared update information and asks for confirmation before installing it; release notes can follow the current English/Spanish UI language when localized notes are available. If the app is already current or the check cannot complete because the network is unavailable, no unnecessary interruption is shown. The downloaded executable is verified against the release manifest before replacement, and rollback protection is available if the new build cannot complete its startup confirmation. If **Start with Windows** is enabled, the new version validates and repairs its own startup registration so it continues to point to the current executable path and filename after an update.
+Each stable release includes the portable `GameSyncHub.exe`, a SHA-256 checksum file and the updater manifest. Game Sync Hub verifies downloaded updates before replacement and keeps rollback protection if a new build cannot complete its startup confirmation.
 
-> Do not download Game Sync Hub from unofficial mirrors unless a release note explicitly points to them.
+> Do not download Game Sync Hub from unofficial mirrors unless an official release explicitly points to them.
 
 ### Save-safety design
 
-Game Sync Hub is designed so that Google Drive adds redundancy rather than becoming a requirement for playing. When the local protection state is healthy, temporary loss of Internet or Drive should leave the game usable and keep synchronization pending for later.
+Game Sync Hub is designed so that Google Drive adds redundancy rather than becoming a requirement for playing. Save preparation is local-first, remote uploads use immutable packages, downloads are staged and verified before promotion, and ambiguous multi-PC states are preserved for conflict resolution instead of being overwritten automatically.
 
-Cloud conflicts, corruption or an unsafe local protection state are handled separately because those situations can require user attention before a save can be changed safely.
+The software is extensively tested, but no software can guarantee zero risk. **Keep an independent backup of important saves.**
 
 ### Important notice
 
-Game Sync Hub is a **personal hobby project**, created in my free time. I am **not a professional software developer**.
+Game Sync Hub is a **personal hobby project** developed in my free time. I am **not a professional software developer**.
 
-Development is carried out through **AI-assisted vibe coding**. Artificial-intelligence tools are used to generate, modify, review, document and test parts of the project.
+Development is carried out with **AI-assisted vibe coding**. AI tools are used to generate, modify, review, document and test parts of the project.
 
-The application is designed and tested with safety and reliability in mind, but software — especially software developed with AI assistance — can contain bugs, incompatibilities or unexpected behaviour. **Game Sync Hub is provided as-is, without guarantees, and you choose to use it at your own risk.**
-
-Because Game Sync Hub can work with save files, local folders, NTFS links and cloud synchronization, keeping an **independent backup of important data** is strongly recommended.
+The application is provided **as-is, without guarantees**, and you choose to use it at your own risk. Because Game Sync Hub can work with save files, local folders, NTFS links and cloud synchronization, an independent backup of important data is strongly recommended.
 
 Read the full **[Disclaimer](DISCLAIMER.md)** before using the application.
 
@@ -97,7 +94,7 @@ Read the full **[Disclaimer](DISCLAIMER.md)** before using the application.
 - **Bug:** [Report a bug](https://github.com/IMC93Labs/GameSyncHub-Releases/issues/new/choose)
 - **Feature request:** [Request an improvement](https://github.com/IMC93Labs/GameSyncHub-Releases/issues/new/choose)
 - **Questions and general help:** [Discussions](https://github.com/IMC93Labs/GameSyncHub-Releases/discussions)
-- **Security issue:** read [Security policy](SECURITY.md) and report it privately when possible.
+- **Security issue:** read the [Security policy](SECURITY.md) and report it privately when possible.
 
 Support is provided on a best-effort basis. This is a hobby project and there is no guaranteed response time or service level.
 
@@ -114,40 +111,39 @@ See also: **[Support](SUPPORT.md)** · **[Security](SECURITY.md)** · **[Contrib
 
 ### ¿Qué es Game Sync Hub?
 
-Game Sync Hub es una aplicación portable para Windows diseñada para organizar juegos locales de PC, proteger y recuperar sus partidas guardadas, sincronizar mediante Google Drive la información necesaria y ofrecer una experiencia de consola manejable con mando desde el televisor o el sofá.
+Game Sync Hub es una aplicación portable para Windows destinada a organizar juegos locales de PC, proteger y recuperar partidas guardadas, sincronizar mediante Google Drive la información necesaria y ofrecer un Modo consola manejable con mando desde el televisor o el sofá.
 
-Combina la biblioteca de escritorio con protección local-first de saves, recuperación multi-PC, enriquecimiento automático de arte/metadatos, soporte de mandos e integraciones opcionales como reglas Anti-UAC y el atajo de overlay de rendimiento de MSI Afterburner/RTSS.
+Combina una biblioteca de escritorio con protección local-first de saves, recuperación multi-PC, enriquecimiento automático de arte/metadatos, soporte de mandos, estadísticas de juego e integraciones opcionales como reglas Anti-UAC y control del overlay de MSI Afterburner/RTSS.
 
-### Última versión — v1.0.13
+### Última versión — v1.0.15
 
-- **Rendimiento y pulido visual:** el arranque, la navegación y la carga de imágenes realizan menos trabajo redundante y reducen estados visuales provisionales para que las pantallas se sientan más estables e inmediatas.
-- **Rutas conocidas local-first:** crear, editar y borrar actualiza la interfaz local inmediatamente después de persistir el cambio de forma durable, mientras Google Drive continúa sincronizando en segundo plano.
-- **Handoff del Modo consola más limpio:** el ciclo de ventanas evita vistas legacy intermedias, destellos del escritorio y fallos en la primera restauración durante entradas/salidas repetidas.
-- **Corrección de estabilidad del mando:** corregido el marshalling nativo de `JOYCAPS` en la ruta WinMM tras identificar durante pruebas intensivas que era el origen de un crash por corrupción de heap.
-- **Ejecución más limpia:** eliminadas comprobaciones periódicas legacy obsoletas y la búsqueda repetida del `menu.wav` ausente, conservando el comportamiento existente.
-- **Notas de actualización localizadas:** la información de actualización puede seguir el idioma actual de la interfaz de Game Sync Hub (inglés/español), con fallback al inglés y manifests retrocompatibles.
+- **Refuerzo de seguridad de partidas y nube:** la recuperación de subidas y descargas soporta interrupciones manteniendo estados locales y remotos verificados.
+- **Estado durable de recuperación:** journal de operaciones, estados terminales monotónicos, reconciliación y protección compare-and-swap evitan que tareas antiguas sobrescriban estados válidos más recientes.
+- **Sincronización multi-PC más segura:** mayor integridad de Current / Previous y protección de conflictos sin sobrescribir progresos independientes.
+- **Rendimiento de Google Drive recuperado:** reutilización del inventario remoto y chunks resumibles mayores reducen tiempos sin eliminar comprobaciones de seguridad.
+- **Estabilidad de hotplug del mando:** corregida una ruta nativa HID/WinMM que podía cerrar Game Sync Hub al desconectar o reconectar mandos Bluetooth.
+- **Pulido del Modo consola:** mejoras en biblioteca, ajustes, editor de juegos, selección multimedia, movimiento, sonidos, háptica y experiencia de arranque.
+- **Mejoras generales de estabilidad y ciclo de vida** en flujos prolongados de mandos, nube e interfaz.
 
-➡️ **[Ver el resumen de v1.0.13](docs/releases/v1.0.13.md#español)**
+➡️ **[Ver el resumen de v1.0.15](docs/releases/v1.0.15.md#español)**
 
 ### Funciones destacadas
 
-- **Protección y recuperación local-first de partidas** con protección local validada, historial Current / Previous verificado y material de recuperación manual para emergencias.
-- **Sincronización mediante Google Drive** de partidas protegidas y de la información necesaria para recuperar la biblioteca de Game Sync Hub en otro PC.
-- **Funcionamiento sin conexión**: si Internet o Drive no están disponibles, una partida local sana puede seguir utilizándose y la sincronización queda pendiente hasta que vuelva la conexión.
-- **Autorreparación de sincronización en Drive** para recursos gestionados, evitando referencias remotas obsoletas, bucles de reintento y staging lógico duplicado de recuperación.
-- **Recuperación manual más eficiente**, reutilizando archivos idénticos ya verificados en lugar de volver a subir innecesariamente todo el árbol de recuperación.
-- **Seguridad multi-PC** con detección de divergencias basada en el historial de partidas y no simplemente en la fecha más reciente.
-- **Recuperación tras reinstalar/cambiar de PC**: recuperar la biblioteca desde Drive y volver a vincular cada juego con su nuevo ejecutable/ruta de saves.
-- **Scraper de metadatos e imágenes**: busca candidatos públicos y aplica portada, fondo horizontal, icono y descripción cuando están disponibles.
-- **Modo consola** con arte dinámico por juego, temas, efectos de fondo configurables, favoritos/recientes y navegación orientada a mando.
-- **Soporte de mandos** Xbox/XInput, PlayStation, Nintendo y HID genéricos, con iconos adaptados, gestión de reconexión y filtrado de estados Xbox/Bluetooth transitorios.
-- **Entrada automática en Modo consola** al conectar un mando, si se activa, o inicio directo en Modo consola.
+- **Protección y recuperación local-first de partidas** con historial Current / Previous verificado y material de recuperación manual para emergencias.
+- **Sincronización mediante Google Drive** de partidas protegidas y de la información necesaria para recuperar la biblioteca en otro PC.
+- **Sincronización resistente a interrupciones:** subidas reanudables, staging aislado de descarga, journals durables y verificaciones antes de promocionar datos.
+- **Funcionamiento sin conexión:** una partida local sana sigue siendo utilizable si Internet o Drive fallan temporalmente y el trabajo pendiente se reanuda después.
+- **Seguridad multi-PC** con detección de divergencias y conservación de conflictos en lugar de elegir simplemente la fecha más reciente.
+- **Recuperación tras reinstalar o cambiar de PC:** recuperación de biblioteca y re-vinculación de ejecutables y rutas de saves.
+- **Enriquecimiento automático de metadatos e imágenes** con portada, fondo horizontal, icono y descripción cuando están disponibles.
+- **Modo consola** con arte dinámico, movimiento de fondo configurable, favoritos/recientes y navegación orientada a mando.
+- **Soporte de mandos** Xbox/XInput, PlayStation, Nintendo y HID genéricos, con iconos adaptados y gestión de reconexión.
 - **Estadísticas de juego** con tiempo jugado, sesiones y última vez jugado.
-- **Centro de transferencias** para mostrar la actividad real de sincronización, incluyendo pendientes, verificación, subida y recuperación.
-- **Reglas Anti-UAC opcionales** para juegos/launchers de confianza sin desactivar globalmente el UAC de Windows.
-- **Atajo opcional para MSI Afterburner + RTSS**: Menu/Start + View/Select muestra u oculta directamente el OSD de RTSS, independientemente de la tecla configurada en Afterburner cuando la API directa de RTSS está disponible.
-- **Actualizador integrado** para Releases estables de GitHub, con validación SHA-256, comprobación de estado seguro, confirmación de arranque, rollback y reparación automática del inicio con Windows gestionado cuando está activado.
-- **Distribución portable en un solo archivo**: la versión pública de Windows se entrega como un `GameSyncHub.exe` self-contained.
+- **Centro de transferencias** con actividad real de sincronización: pendientes, verificación, subida y recuperación.
+- **Reglas Anti-UAC opcionales** para juegos y launchers de confianza sin desactivar globalmente el UAC de Windows.
+- **Integración opcional MSI Afterburner + RTSS** para alternar el OSD con mando cuando está disponible la ruta directa de RTSS.
+- **Actualizador integrado** basado en Releases estables de GitHub, verificación SHA-256, comprobación de estado seguro, confirmación de arranque y rollback.
+- **Distribución portable en un solo archivo:** la compilación pública de Windows se entrega como `GameSyncHub.exe` self-contained.
 
 ➡️ **[Ver la guía completa de funciones](docs/guides/features.md#español)**
 
@@ -155,7 +151,7 @@ Combina la biblioteca de escritorio con protección local-first de saves, recupe
 
 ![Vista general de Game Sync Hub](docs/media/01-overview.png)
 
-Game Sync Hub puede identificar un juego real, obtener su arte/metadatos disponibles, proteger su carpeta de partidas y mostrar el resultado tanto en la biblioteca de escritorio como en Modo consola.
+Game Sync Hub puede identificar un juego, obtener el arte/metadatos disponibles, proteger su carpeta de partidas y mostrarlo tanto en la biblioteca de escritorio como en Modo consola.
 
 ![Añadir Red Dead Redemption 2 y proteger partidas](docs/media/add-rdr2-full-flow.gif)
 
@@ -170,15 +166,15 @@ Game Sync Hub puede identificar un juego real, obtener su arte/metadatos disponi
 
 Las compilaciones oficiales se publican únicamente en **[Releases](https://github.com/IMC93Labs/GameSyncHub-Releases/releases)**. La compilación estable actual siempre está disponible en **[Latest release](https://github.com/IMC93Labs/GameSyncHub-Releases/releases/latest)**.
 
-Game Sync Hub se distribuye como un ejecutable portable para Windows. Al arrancar realiza una única comprobación en segundo plano para detectar una versión estable oficial más reciente sin bloquear la interfaz. Si existe una actualización, el actualizador muestra la información ya preparada y solicita confirmación antes de instalarla; las novedades pueden seguir el idioma actual inglés/español de la interfaz cuando existen notas localizadas. Si la aplicación ya está al día o la comprobación no puede completarse por falta temporal de red, no se muestra ninguna interrupción innecesaria. El ejecutable descargado se valida frente al manifiesto de la Release antes de sustituir el actual y existe protección de rollback si la nueva versión no completa correctamente su confirmación de arranque. Si **Iniciar con Windows** está activado, la nueva versión valida y repara silenciosamente su propia entrada de inicio para que siga apuntando a la ruta y nombre actuales del ejecutable después de una actualización.
+Cada versión estable incluye el `GameSyncHub.exe` portable, su archivo de comprobación SHA-256 y el manifiesto del actualizador. Game Sync Hub verifica las actualizaciones descargadas antes de sustituir el ejecutable y mantiene protección de rollback si la nueva compilación no completa su confirmación de arranque.
 
-> No descargues Game Sync Hub desde mirrors o páginas no oficiales salvo que una Release indique expresamente lo contrario.
+> No descargues Game Sync Hub desde mirrors o páginas no oficiales salvo que una Release oficial indique expresamente lo contrario.
 
 ### Diseño de seguridad de las partidas
 
-Game Sync Hub está diseñado para que Google Drive añada redundancia en lugar de convertirse en un requisito para jugar. Cuando la protección local está sana, una caída temporal de Internet o Drive debe permitir seguir utilizando el juego y dejar la sincronización pendiente para más tarde.
+Game Sync Hub está diseñado para que Google Drive añada redundancia en lugar de convertirse en un requisito para jugar. La preparación de saves es local-first, las subidas remotas usan paquetes inmutables, las descargas se preparan y verifican antes de promocionarse y los estados multi-PC ambiguos se conservan para resolverlos en lugar de sobrescribirse automáticamente.
 
-Los conflictos de nube, corrupción o un estado local de protección inseguro se tratan de forma separada porque esas situaciones sí pueden necesitar intervención antes de modificar una partida con seguridad.
+El software se somete a pruebas intensivas, pero ningún software puede garantizar riesgo cero. **Mantén una copia de seguridad independiente de las partidas importantes.**
 
 ### Aviso importante
 
@@ -186,9 +182,7 @@ Game Sync Hub es un **proyecto personal creado como hobby** y desarrollado en mi
 
 El desarrollo se realiza mediante **vibe coding asistido por inteligencia artificial**. Se utilizan herramientas de IA para generar, modificar, revisar, documentar y probar partes del proyecto.
 
-La aplicación se diseña y prueba buscando que sea segura y fiable, pero cualquier software —especialmente software desarrollado con ayuda de IA— puede contener errores, incompatibilidades o comportamientos no previstos. **Game Sync Hub se proporciona tal cual, sin garantías, y cada usuario decide utilizarlo bajo su propia responsabilidad.**
-
-Como Game Sync Hub puede trabajar con partidas guardadas, carpetas locales, enlaces NTFS y sincronización en la nube, se recomienda encarecidamente mantener una **copia de seguridad independiente de los datos importantes**.
+La aplicación se proporciona **tal cual, sin garantías**, y cada usuario decide utilizarla bajo su propia responsabilidad. Como Game Sync Hub puede trabajar con partidas guardadas, carpetas locales, enlaces NTFS y sincronización en la nube, se recomienda encarecidamente mantener una copia de seguridad independiente de los datos importantes.
 
 Lee el **[Aviso y responsabilidad](DISCLAIMER.md)** completo antes de utilizar la aplicación.
 
