@@ -1,5 +1,9 @@
 # Support / Soporte
 
+> SYNCORE is the new name of Game Sync Hub; the currently published stable application is Game Sync Hub v1.1.0. SYNCORE 2.0 is not yet released.
+>
+> SYNCORE es el nuevo nombre de Game Sync Hub; la versión pública estable sigue siendo Game Sync Hub v1.1.0. SYNCORE 2.0 todavía no se ha publicado.
+
 [English](#english) · [Español](#espanol)
 
 ---
@@ -7,7 +11,7 @@
 <a id="english"></a>
 ## English
 
-Game Sync Hub is a personal hobby project. Support is provided on a **best-effort basis** and there is no guaranteed response time.
+SYNCORE is a personal hobby project. Support is provided on a **best-effort basis** and there is no guaranteed response time.
 
 ### Where to ask
 
@@ -18,7 +22,7 @@ Game Sync Hub is a personal hobby project. Support is provided on a **best-effor
 
 ### Before opening a bug report
 
-Please check that you are using the latest available version and search existing Issues first. Include the Game Sync Hub version, Windows version, affected game and clear reproduction steps whenever possible.
+Please check that you are using the latest available version and search existing Issues first. Include the SYNCORE version, Windows version, affected game and clear reproduction steps whenever possible.
 
 Do not publish passwords, OAuth tokens, credentials, private save files or other personal information.
 
@@ -31,7 +35,7 @@ Because this is a hobby project, help may be limited for unusual Windows configu
 <a id="espanol"></a>
 ## Español
 
-Game Sync Hub es un proyecto personal realizado como hobby. El soporte se presta **en la medida de lo posible** y no existe un tiempo de respuesta garantizado.
+SYNCORE es un proyecto personal realizado como hobby. El soporte se presta **en la medida de lo posible** y no existe un tiempo de respuesta garantizado.
 
 ### Dónde pedir ayuda
 
@@ -42,7 +46,7 @@ Game Sync Hub es un proyecto personal realizado como hobby. El soporte se presta
 
 ### Antes de informar de un error
 
-Comprueba que utilizas la versión más reciente disponible y busca primero si ya existe un Issue similar. Siempre que sea posible, indica la versión de Game Sync Hub, versión de Windows, juego afectado y pasos claros para reproducir el problema.
+Comprueba que utilizas la versión más reciente disponible y busca primero si ya existe un Issue similar. Siempre que sea posible, indica la versión de SYNCORE, versión de Windows, juego afectado y pasos claros para reproducir el problema.
 
 No publiques contraseñas, tokens OAuth, credenciales, partidas privadas ni otra información personal.
 
@@ -52,4 +56,4 @@ Al tratarse de un proyecto realizado como hobby, la ayuda puede ser limitada par
 
 ---
 
-**Game Sync Hub — IMC93Labs**
+**SYNCORE (formerly Game Sync Hub) — IMC93Labs**
