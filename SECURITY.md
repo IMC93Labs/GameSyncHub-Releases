@@ -1,5 +1,9 @@
 # Security Policy / Política de seguridad
 
+> SYNCORE is the new name of Game Sync Hub; the currently published stable application is Game Sync Hub v1.1.0. SYNCORE 2.0 is not yet released.
+>
+> SYNCORE es el nuevo nombre de Game Sync Hub; la versión pública estable sigue siendo Game Sync Hub v1.1.0. SYNCORE 2.0 todavía no se ha publicado.
+
 [English](#english) · [Español](#espanol)
 
 ---
@@ -7,7 +11,7 @@
 <a id="english"></a>
 ## English
 
-Game Sync Hub is a personal hobby project maintained on a best-effort basis.
+SYNCORE is a personal hobby project maintained on a best-effort basis.
 
 ### Reporting a security issue
 
@@ -17,7 +21,7 @@ If GitHub shows a **Report a vulnerability** option in the repository's **Securi
 
 Please include, when safe to do so:
 
-- affected Game Sync Hub version;
+- affected SYNCORE version;
 - Windows version;
 - short description of the impact;
 - reproducible steps using synthetic or non-sensitive data;
@@ -38,7 +42,7 @@ There is no guaranteed response time, SLA or bug-bounty program. Reports will be
 <a id="espanol"></a>
 ## Español
 
-Game Sync Hub es un proyecto personal realizado como hobby y mantenido en la medida de lo posible.
+SYNCORE es un proyecto personal realizado como hobby y mantenido en la medida de lo posible.
 
 ### Informar de un problema de seguridad
 
@@ -48,7 +52,7 @@ Si GitHub muestra la opción **Report a vulnerability** en la pestaña **Securit
 
 Incluye, cuando sea seguro hacerlo:
 
-- versión afectada de Game Sync Hub;
+- versión afectada de SYNCORE;
 - versión de Windows;
 - descripción breve del impacto;
 - pasos reproducibles usando datos sintéticos o no sensibles;
@@ -66,4 +70,4 @@ No existe un tiempo de respuesta garantizado, SLA ni programa de recompensas por
 
 ---
 
-**Game Sync Hub — IMC93Labs**
+**SYNCORE (formerly Game Sync Hub) — IMC93Labs**

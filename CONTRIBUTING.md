@@ -1,5 +1,9 @@
 # Contributing / Contribuir
 
+> SYNCORE is the new name of Game Sync Hub; the currently published stable application is Game Sync Hub v1.1.0. SYNCORE 2.0 is not yet released.
+>
+> SYNCORE es el nuevo nombre de Game Sync Hub; la versión pública estable sigue siendo Game Sync Hub v1.1.0. SYNCORE 2.0 todavía no se ha publicado.
+
 [English](#english) · [Español](#espanol)
 
 ---
@@ -7,7 +11,7 @@
 <a id="english"></a>
 ## English
 
-This repository is primarily for **official releases, public documentation and user support**. The Game Sync Hub source code is not published here.
+This repository is primarily for **official releases, public documentation and user support**. The SYNCORE source code is not published here.
 
 The most useful ways to contribute are:
 
@@ -27,7 +31,7 @@ For security-sensitive matters, follow **[SECURITY.md](SECURITY.md)** instead of
 <a id="espanol"></a>
 ## Español
 
-Este repositorio está destinado principalmente a **versiones oficiales, documentación pública y soporte a usuarios**. El código fuente de Game Sync Hub no se publica aquí.
+Este repositorio está destinado principalmente a **versiones oficiales, documentación pública y soporte a usuarios**. El código fuente de SYNCORE no se publica aquí.
 
 Las formas más útiles de colaborar son:
 
@@ -44,4 +48,4 @@ Para asuntos relacionados con seguridad, sigue **[SECURITY.md](SECURITY.md)** en
 
 ---
 
-**Game Sync Hub — IMC93Labs**
+**SYNCORE (formerly Game Sync Hub) — IMC93Labs**

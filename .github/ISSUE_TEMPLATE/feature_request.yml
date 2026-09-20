@@ -1,5 +1,5 @@
 name: Request an improvement / Solicitar una mejora
-description: Suggest a feature or improvement for Game Sync Hub / Sugiere una función o mejora para Game Sync Hub
+description: Suggest a feature or improvement for SYNCORE / Sugiere una función o mejora para SYNCORE
 title: "[FEATURE] "
 labels:
   - enhancement
@@ -10,8 +10,8 @@ body:
         Suggestions are welcome. Please describe the goal rather than only the implementation idea.
         Las sugerencias son bienvenidas. Describe el objetivo además de la idea de implementación.
 
-        **Personal hobby project / Proyecto personal:** Game Sync Hub is developed in free time through AI-assisted vibe coding. There is no guarantee that a suggestion can be implemented.
-        Game Sync Hub se desarrolla en el tiempo libre mediante vibe coding asistido por IA. No existe garantía de que una sugerencia pueda implementarse.
+        **Personal hobby project / Proyecto personal:** SYNCORE (formerly Game Sync Hub) is developed in free time through AI-assisted vibe coding. There is no guarantee that a suggestion can be implemented.
+        SYNCORE se desarrolla en el tiempo libre mediante vibe coding asistido por IA. No existe garantía de que una sugerencia pueda implementarse.
 
   - type: textarea
     id: improvement
