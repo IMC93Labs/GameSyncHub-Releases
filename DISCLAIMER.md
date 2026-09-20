@@ -1,5 +1,9 @@
 # Disclaimer / Aviso y responsabilidad
 
+> SYNCORE is the new name of Game Sync Hub; the currently published stable application is Game Sync Hub v1.1.0. SYNCORE 2.0 is not yet released.
+>
+> SYNCORE es el nuevo nombre de Game Sync Hub; la versión pública estable sigue siendo Game Sync Hub v1.1.0. SYNCORE 2.0 todavía no se ha publicado.
+
 [English](#english) · [Español](#espanol)
 
 ---
@@ -9,7 +13,7 @@
 
 ### Personal hobby project
 
-Game Sync Hub is a personal project created as a hobby and developed in the author's free time. **It is not developed by a professional software developer or by a software company.**
+SYNCORE is a personal project created as a hobby and developed in the author's free time. **It is not developed by a professional software developer or by a software company.**
 
 ### AI-assisted development
 
@@ -19,7 +23,7 @@ AI systems can make mistakes. Human review, automated tests and manual testing r
 
 ### Safety and data
 
-Game Sync Hub is designed with the intention of protecting game saves and avoiding data loss. However, depending on the enabled features, it can interact with save files, local folders, NTFS links, application configuration, Google Drive and other Windows components.
+SYNCORE is designed with the intention of protecting game saves and avoiding data loss. However, depending on the enabled features, it can interact with save files, local folders, NTFS links, application configuration, Google Drive and other Windows components.
 
 Errors, incompatibilities, interrupted operations, third-party service failures or unexpected system conditions can therefore cause incorrect behaviour or data loss.
 
@@ -27,13 +31,13 @@ Before relying on the application, users should keep independent backups of impo
 
 ### Third-party services
 
-Some functions can depend on services or software not controlled by IMC93Labs, including Google Drive, Windows components, games, launchers and other third-party applications. Their availability, behaviour and compatibility can change independently of Game Sync Hub.
+Some functions can depend on services or software not controlled by IMC93Labs, including Google Drive, Windows components, games, launchers and other third-party applications. Their availability, behaviour and compatibility can change independently of SYNCORE.
 
 ### No warranty
 
 The software is provided **as-is and without warranties**, to the extent permitted by applicable law. No guarantee is made that it will be error-free, uninterrupted, compatible with every game or computer, or suitable for a particular purpose.
 
-Use of Game Sync Hub is voluntary. Each user is responsible for deciding whether to run it, for maintaining appropriate backups and for the consequences of using it on their own system and data.
+Use of SYNCORE is voluntary. Each user is responsible for deciding whether to run it, for maintaining appropriate backups and for the consequences of using it on their own system and data.
 
 Nothing in this notice is intended to exclude or limit rights or responsibilities that cannot legally be excluded or limited under applicable law.
 
@@ -48,7 +52,7 @@ Please report reproducible bugs through **Issues**. Security-sensitive problems,
 
 ### Proyecto personal realizado como hobby
 
-Game Sync Hub es un proyecto personal creado como hobby y desarrollado en el tiempo libre de su autor. **No está desarrollado por un programador profesional ni por una empresa de software.**
+SYNCORE es un proyecto personal creado como hobby y desarrollado en el tiempo libre de su autor. **No está desarrollado por un programador profesional ni por una empresa de software.**
 
 ### Desarrollo asistido por inteligencia artificial
 
@@ -58,7 +62,7 @@ Los sistemas de IA pueden cometer errores. La revisión, las pruebas automatizad
 
 ### Seguridad y datos
 
-Game Sync Hub se diseña con la intención de proteger las partidas guardadas y evitar pérdidas de información. Sin embargo, dependiendo de las funciones activadas, puede interactuar con partidas guardadas, carpetas locales, enlaces NTFS, configuración de la aplicación, Google Drive y otros componentes de Windows.
+SYNCORE se diseña con la intención de proteger las partidas guardadas y evitar pérdidas de información. Sin embargo, dependiendo de las funciones activadas, puede interactuar con partidas guardadas, carpetas locales, enlaces NTFS, configuración de la aplicación, Google Drive y otros componentes de Windows.
 
 Por tanto, errores, incompatibilidades, operaciones interrumpidas, fallos de servicios externos o situaciones inesperadas del sistema pueden provocar comportamientos incorrectos o pérdida de datos.
 
@@ -66,13 +70,13 @@ Antes de depender de la aplicación, se recomienda mantener copias de seguridad 
 
 ### Servicios de terceros
 
-Algunas funciones pueden depender de servicios o software no controlados por IMC93Labs, incluidos Google Drive, componentes de Windows, juegos, launchers y otras aplicaciones de terceros. Su disponibilidad, comportamiento y compatibilidad pueden cambiar de forma independiente a Game Sync Hub.
+Algunas funciones pueden depender de servicios o software no controlados por IMC93Labs, incluidos Google Drive, componentes de Windows, juegos, launchers y otras aplicaciones de terceros. Su disponibilidad, comportamiento y compatibilidad pueden cambiar de forma independiente a SYNCORE.
 
 ### Sin garantías
 
 El software se proporciona **tal cual y sin garantías**, en la medida permitida por la legislación aplicable. No se garantiza que esté libre de errores, que funcione de manera ininterrumpida, que sea compatible con todos los juegos o equipos ni que sea adecuado para una finalidad concreta.
 
-El uso de Game Sync Hub es voluntario. Cada usuario es responsable de decidir si desea ejecutarlo, de mantener copias de seguridad adecuadas y de las consecuencias derivadas de su uso sobre su propio sistema y sus datos.
+El uso de SYNCORE es voluntario. Cada usuario es responsable de decidir si desea ejecutarlo, de mantener copias de seguridad adecuadas y de las consecuencias derivadas de su uso sobre su propio sistema y sus datos.
 
 Nada de este aviso pretende excluir o limitar derechos o responsabilidades que legalmente no puedan excluirse o limitarse conforme a la legislación aplicable.
 
@@ -82,4 +86,4 @@ Los errores reproducibles pueden comunicarse mediante **Issues**. Los problemas 
 
 ---
 
-**Game Sync Hub — IMC93Labs**
+**SYNCORE (formerly Game Sync Hub) — IMC93Labs**
